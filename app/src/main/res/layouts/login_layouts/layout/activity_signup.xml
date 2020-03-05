@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".AuthenticationActivity.Signup">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Signup"
+        android:textColor="#2A2A2A"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Name"
+        android:fontFamily="@font/helveticaneue"
+        android:textColor="#A6A6A6"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:fontFamily="@font/helveticaneue"
+        android:inputType="text"
+        android:textColor="#2A2A2A"
+        android:textColorHint="#2A2A2A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Phone No"
+        android:fontFamily="@font/helveticaneue"
+        android:textColor="#A6A6A6"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0 1 2 3 4 5 6 7 8 9"
+        android:fontFamily="@font/helveticaneue"
+        android:inputType="number"
+        android:textColor="#2A2A2A"
+        android:textColorHint="#2A2A2A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:fontFamily="@font/helveticaneue"
+        android:textColor="#A6A6A6"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="lorem_ipsum@email.com"
+        android:fontFamily="@font/helveticaneue"
+        android:inputType="textEmailAddress"
+        android:textColor="#2A2A2A"
+        android:textColorHint="#2A2A2A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:fontFamily="@font/helveticaneue"
+        android:textColor="#A6A6A6"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="*  *  *  *  *  *  *  *"
+        android:inputType="textPassword"
+        android:fontFamily="@font/helveticaneue"
+        android:textColor="#000000"
+        android:textColorHint="#2A2A2A" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up As"
+        android:fontFamily="@font/helveticaneue"
+        android:textColor="#A6A6A6"
+        android:textSize="15sp" />
+    <Spinner
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:id="@+id/Spinner"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/signupbutton" >
+        </include>
+
+        <TextView
+            android:id="@+id/Signin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10sp"
+            android:gravity="center"
+            android:fontFamily="@font/helveticaneue"
+            android:text="Already have an acoount ?   Sign in"
+            android:textAlignment="center"
+            android:textColor="#2A2A2A"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

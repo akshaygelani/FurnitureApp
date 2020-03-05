@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.dev.furniturestore"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/layouts',
+                           'src/main/res/layouts/activity_layouts',
+                           'src/main/res/layouts/adapter_layouts',
+                           'src/main/res/layouts/extra_layouts',
+                           'src/main/res/layouts/login_layouts',
+
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'com.google.firebase:firebase-core:17.2.2'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+
+    implementation 'com.amitshekhar.android:android-networking:1.0.2' // For Networking
+    implementation 'com.kaopiz:kprogresshud:1.0.2' //Progress Bar
+    implementation "androidx.recyclerview:recyclerview:1.1.0" //RecyclerView
+
+    implementation 'androidx.cardview:cardview:1.0.0' //cardView
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0' //Crop And Picup Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0' //circular imageView
+    implementation 'com.github.bumptech.glide:glide:4.9.0' // Glide Library
+}

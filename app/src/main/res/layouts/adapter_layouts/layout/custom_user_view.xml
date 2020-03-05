@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/UserProfileImage"
+        android:src="@drawable/placeholder"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"/>
+    <TextView
+        android:id="@+id/SellerName"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:text="TATA FURNITURE PVT LTD"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:id="@+id/Uid"
+        android:layout_height="0dp"/>
+</LinearLayout>

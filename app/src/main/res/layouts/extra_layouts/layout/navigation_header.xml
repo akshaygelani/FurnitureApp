@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bed"
+        app:civ_border_color="#667EEA"
+        app:civ_border_width="2dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+   <TextView
+       android:layout_width="match_parent"
+       android:text="KAKA PVC"
+       android:textColor="#FFF"
+       android:layout_marginTop="10dp"
+       android:textAlignment="center"
+       android:textSize="18sp"
+       android:id="@+id/sellerName"
+       android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/laborwork"
+        android:icon="@drawable/labor_work"
+        android:title="Labor Work" />
+    <item
+        android:id="@+id/shoppingmall"
+        android:icon="@drawable/ic_local_mall_black_24dp"
+        android:title="Shopping Mall" />
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+        android:title="Cart" />
+    <item
+        android:id="@+id/requests"
+        android:icon="@drawable/ic_repeat_black_24dp"
+        android:title="Estimation Requests" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="Share App" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="About" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Logout" />
+
+</menu>

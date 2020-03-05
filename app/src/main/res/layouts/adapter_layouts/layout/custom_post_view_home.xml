@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_margin="10sp"
+            android:id="@+id/UserProfileImage"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Comany Name"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/SellerName"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:id="@+id/Uid"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/PostImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bed" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/PostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue"
+            android:paddingTop="10sp"
+            android:text="Full Titile sbytynrdtynrtynrtynrtytryn"
+            android:textColor="#2A2A2A"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/PostDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue"
+            android:paddingTop="10sp"
+            android:text="Beds With Storage"
+            android:textColor="#2A2A2A"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:background="#A2A2A2A2"
+        android:layout_height="1dp"/>
+</LinearLayout>
